@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>TradeMind Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>TradeMind Pro</h1>
+    <p>تحليل كريبتو احترافي Spot + Futures</p>
+    <a href="dashboard.html" class="btn">ابدأ التحليل</a>
+</header>
+
+<section class="features">
+    <div>📈 تحليل اتجاه السوق</div>
+    <div>🎯 Entry / Targets</div>
+    <div>🛑 Stop Loss ذكي</div>
+</section>
+
+<section class="pricing">
+    <h2>الاشتراك</h2>
+    <p class="price">Pro – ٢٥ USDT / شهر</p>
+</section>
+
+<footer>
+    <p>⚠️ التحليل تعليمي وليس نصيحة استثمارية</p>
+</footer>
+
+</body>
+</html>
