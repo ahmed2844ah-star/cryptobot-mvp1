@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard | TradeMind Pro</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/script.js"></script>
+</head>
+<body>
+<div class="dashboard">
+<h2>لوحة التحليل</h2>
+<p>الخطة: <strong>{{ plan }}</strong></p>
+
+<form id="analyzeForm" method="post" action="/analyze">
+<label>العملة</label>
+<input type="text" name="symbol" placeholder="BTCUSDT">
+<label>نوع التداول</label>
+<select name="type_">
+<option value="spot">Spot</option>
+<option value="futures">Futures 🔒</option>
+</select>
+<label>الفريم</label>
+<select name="timeframe">
+<option value="1h">1h</option>
+<option value="15m">15m 🔒</option>
+<option value="4h">4h 🔒</option>
+</select>
+<button class="btn" type="submit">حلّل الآن</button>
+</form>
+
+<div class="result" id="result"></div>
+<a href="/login" class="upgrade">🔓 تسجيل الخروج</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+def analyze(symbol, type_, timeframe):
+    return {
+        "Trend": "صاعد",
+        "Entry": "42,500",
+        "Targets": ["43,200", "44,100"],
+        "Stop Loss": "41,900",
+        "Risk": "متوسط"
+    }

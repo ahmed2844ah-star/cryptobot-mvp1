@@ -1,0 +1,27 @@
+// حالة الاشتراك (مؤقت)
+let user = JSON.parse(localStorage.getItem("user"));
+let subscription = user ? user.plan : "free";
+
+function analyze() {
+    const type = document.getElementById("type").value;
+    const timeframe = document.getElementById("timeframe").value;
+    const result = document.getElementById("result");
+
+    // قيود الخطة المجانية
+    if (subscription === "free") {
+        if (type === "futures" || timeframe !== "1h") {
+            result.innerHTML = "🔒 هذه الميزة متاحة لمشتركي Pro فقط";
+            result.style.color = "red";
+            return;
+        }
+    }
+
+    // نتيجة تحليل تجريبية
+    result.style.color = "#00c853";
+    result.innerHTML = `
+        📈 Trend: صاعد<br>
+        🎯 Entry: ٤٢٬٥٠٠<br>
+        🟢 Target: ٤٣٬٢٠٠<br>
+        🔴 Stop Loss: ٤١٬٩٠٠
+    `;
+}
